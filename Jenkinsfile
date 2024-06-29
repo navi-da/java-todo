@@ -34,13 +34,13 @@ pipeline {
             }
         }
     }
-    post {
-        success {
-            slackSend color: "good", message: "Build #${BUILD_NUMBER} ran successfully"
-        }
+    // post {
+    //     success {
+    //         slackSend color: "good", message: "Build #${BUILD_NUMBER} ran successfully"
+    //     }
         
-        failure {
-            slackSend color: "danger", message: "Build #${BUILD_NUMBER} failed"
-        }
-    }
+    //     failure {
+    //         slackSend color: "danger", message: "Build #${BUILD_NUMBER} failed"
+    //     }
+    // }
 }
